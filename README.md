@@ -11,5 +11,5 @@ This implementation makes use of the MobileNet deep learning CNN architecture as
 Caffe is a deep learning framework developed by the Berkely AI Research and Community Contributors. Caffe [repo](https://github.com/BVLC/caffe). It is a much faster way of training images with over 6 million images per day using an Nvidia 
 K-40 GPU
 
-## Run code with following commands in the terminal
+## Run code
 `python detectDNN.py -p Caffe/SSD_MobileNet_prototxt -m Caffe/SSD_MobileNet.caffemodel`
