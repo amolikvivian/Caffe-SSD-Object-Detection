@@ -13,3 +13,6 @@ K-40 GPU
 
 ## Run code
 `python detectDNN.py -p Caffe/SSD_MobileNet_prototxt -m Caffe/SSD_MobileNet.caffemodel`
+
+## Article
+[Medium](medium.com/amolikvivian)
