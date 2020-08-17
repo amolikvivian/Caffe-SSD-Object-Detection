@@ -17,4 +17,4 @@ K-40 GPU
 `python detectDNN.py -p Caffe/SSD_MobileNet_prototxt -m Caffe/SSD_MobileNet.caffemodel`
 
 ## Article
-[Medium](medium.com/amolikvivian)
+[Medium](https://medium.com/analytics-vidhya/ssd-object-detection-in-real-time-deep-learning-and-caffe-f41e40eea968)
