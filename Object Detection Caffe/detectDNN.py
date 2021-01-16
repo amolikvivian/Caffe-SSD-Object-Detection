@@ -10,7 +10,7 @@ from imutils.video import VideoStream
 
 #Constructing Argument Parse to input from Command Line
 ap = argparse.ArgumentParser()
-ap.add_argument("-p", "--prototxt", require = True, help = 'Path to prototxt')
+ap.add_argument("-p", "--prototxt", required = True, help = 'Path to prototxt')
 ap.add_argument("-m", "--model", required = True, help = 'Path to model weights')
 ap.add_argument("-c", "--confidence", type = float, default = 0.7)
 args = vars(ap.parse_args())
@@ -71,7 +71,7 @@ while True:
             cv2.rectangle(frame, (startX, startY), (endX, endY), colors[idx], 2)
 
             y = startY - 15 if startY - 15 > 15 else startY + 15
-			cv2.putText(frame, label, (startX, y),cv2.FONT_HERSHEY_SIMPLEX, 0.5, color[idx], 2)
+            cv2.putText(frame, label, (startX, y),cv2.FONT_HERSHEY_SIMPLEX, 0.5, colors[idx], 2)
 
     cv2.imshow("Frame", frame)
     key = cv2.waitKey(1) & 0xFF
